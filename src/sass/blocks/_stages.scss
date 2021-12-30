@@ -1,0 +1,88 @@
+.stages {
+    position: relative;
+    background: $orange;
+    height: 519px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-wrapper {
+        padding-top: 150px;
+        width: 608px;
+    }
+
+    &__subtitle {
+        line-height: 35px;
+        color: $black;
+    }
+
+    &__descr {
+        padding-top: 20px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        color: $black;
+        a {
+            color: $white;
+            text-decoration: none;
+            &:hover {
+                color: $black;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__icons-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__register {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 780px;
+        padding-top: 120px;
+        &-divider {
+            width: 58px;
+            border-bottom: 4px solid $white;
+            &:nth-child(2) {
+                left: 491.75px;
+            }
+        }
+    }
+
+    &__item {
+        &-title {
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            line-height: 25px;
+            padding-top: 28px;
+            color: $black;
+            
+            &_main {
+                font-weight: 700;
+                padding-top: 33px;
+            }
+        }
+
+        &-text {
+            padding-top: 2px;
+            font-weight: 400;
+            font-size: 16px;
+            text-align: center;
+            line-height: 25px;
+            color: $black;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

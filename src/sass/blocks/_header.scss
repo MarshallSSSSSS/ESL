@@ -1,0 +1,27 @@
+.header {
+    position: absolute;
+    top: 13px;
+    left: 200px;
+    z-index: 2;
+    
+    &__wrapper {
+        width: 740px;
+        height: 94px;
+        border-bottom: 1px solid $orange;
+    }
+    
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+    }
+
+    &-icons__wrapper {
+        display: flex;
+        justify-content: space-between;
+        width: 210px;
+        height: 30px;
+        
+    }
+}

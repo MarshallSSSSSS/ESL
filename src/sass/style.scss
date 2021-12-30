@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700&display=swap');
+
+// @import '../libs/bootstrap/css/bootstrap-grid.min.css';
+@import '../libs/bootstrap/css/bootstrap-reboot.min.css';
+@import '../libs/swiper/swiper-bundle.min.css';
+
+@import 'base/mixins';
+@import 'base/variables';
+
+body {
+	position: relative;
+	font-family: $font;
+	line-height: 20px;
+    letter-spacing: 0.01em;
+	background-color: $black;
+	color: $white;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h3, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+    position: relative;
+	max-width: 1520px;
+    margin: 0 auto;
+	padding: 0;
+}
+
+@import 'blocks/buttons';
+
+@import 'blocks/header';
+@import 'blocks/intro-slider';
+@import 'blocks/schedule';
+@import 'blocks/tabs';
+@import 'blocks/match-card';
+@import 'blocks/stages';
+@import 'blocks/teams';
+@import 'blocks/footer';
+
+@import 'base/media';

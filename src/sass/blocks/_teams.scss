@@ -1,0 +1,93 @@
+.teams {
+    width: 100%;
+    height: 100%;
+    background: url('../img/teams/Background.jpg') center (center / cover) no-repeat;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 510px;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__subbtitle {
+        line-height: 45px;
+    }
+    
+    &__countdown {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 45px;
+    }
+    
+    &__table {
+        width: 652px;
+        height: 642px;
+        margin: 2px 0 180px 0;
+        border-spacing: 0;
+        border: 1px solid $orange;
+        background: $grey;
+
+        &-header {
+            height: 55px;
+            background: $orange;
+            color: $black;   
+
+            &_name {
+                padding-left: 10.43px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 35px;
+                text-align: start;
+            }
+
+            &_number {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 35px;
+                text-align: center;
+            }
+        }
+
+        &-item {
+            &:hover {
+                border: 1px solid $orange;
+                background: $white;
+                color: $black;
+            }
+        }
+
+        &-number {
+            height: 55px;
+            width: 72.13px;
+            font-size: 20px;
+            line-height: 35px;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid $orange;
+        }
+
+        &-name {
+            height: 55px;
+            width: 581px;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 35px;
+            text-align: start;
+            cursor: pointer;
+            border: 1px solid $orange;
+            span {
+                padding: 10px 0;
+            }
+
+        }
+        
+        &-flag {
+            padding: 18.5px 10px 18.5px 20px;
+        }
+    }
+}

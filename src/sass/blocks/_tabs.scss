@@ -1,0 +1,98 @@
+.tabs {
+    padding-top: 40px;
+    overflow: hidden;
+
+    &__list {
+        display: flex;
+        padding: 0;
+        list-style: none;
+        border-top: 2px solid $orange;
+    }
+
+    &__content {
+        display: none;
+        &-active {
+            display: block;
+        }
+    }
+}
+
+.content {
+    &-slider {
+        position: relative;
+        margin-top: 89px;
+        overflow: hidden;
+        
+        &__match-card {
+            padding: 0 36px;
+            margin: 20px 15px;
+            max-width: 350px;
+            max-height: 341px;
+            background: $grey;
+            border-radius: 10px;
+            &:hover .match-card__overlay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                box-shadow: 0 8px 20px rgba(243, 169 , 23, 0.9);
+            }
+        }
+
+        &__pagination {
+            width: 15px;
+            height: 15px;
+            background: #fff;
+            border-radius: 100%;
+            opacity: 1;
+            margin-right: 18px;
+        }
+
+        &__controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            margin: 85px auto 182px auto;
+            width: 350px;
+            height: 85px;
+            z-index: 5;
+            a {
+                width: 85px;
+                height: 85px;
+            }
+        }
+
+        &__prev, &__next {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 85px;
+            width: 85px;
+            border: 2px solid $orange;
+            border-radius: 100%;
+        }
+
+        .swiper-pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: unset;
+            width: 81px;
+
+            &-bullet {
+                width: 15px;
+                height: 15px;
+                margin-right: 18px;
+                background: $grey;
+                opacity: 1;
+                &:nth-child(3) {
+                    margin-right: 0;
+                }
+                &-active {
+                    background: $orange;
+                }
+            }
+        }
+    }
+}

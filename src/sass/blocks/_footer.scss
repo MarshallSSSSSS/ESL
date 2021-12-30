@@ -1,0 +1,29 @@
+.footer {
+    position: relative;
+
+    &__links {
+        position: absolute;
+        right: 299px;
+        bottom: 89px;
+        width: 480px;
+        transform: translateX(50%);
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 35px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $white;
+        margin-right: 126px;
+
+        &:nth-child(3) {
+            margin-right: 0;
+        }
+        
+        &:hover {
+            color: $orange;
+        }
+    }
+}
